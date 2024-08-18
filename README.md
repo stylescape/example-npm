@@ -1,11 +1,10 @@
 <div align="right">
 
-[![GitHub License](https://img.shields.io/github/license/stylescape/font.gl?style=flat-square&logo=readthedocs&logoColor=FFFFFF&label=&labelColor=%23041B26&color=%23041B26&link=LICENSE)](https://github.com/stylescape/example-npm/blob/main/LICENSE)
+[![GitHub License](https://img.shields.io/github/license/stylescape/example-npm?style=flat-square&logo=readthedocs&logoColor=FFFFFF&label=&labelColor=%23041B26&color=%23041B26&link=LICENSE)](https://github.com/stylescape/example-npm/blob/main/LICENSE)
 [![devContainer](https://img.shields.io/badge/devContainer-23041B26?style=flat-square&logo=Docker&logoColor=%23FFFFFF&labelColor=%23041B26&color=%23041B26)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/stylescape/example-npm)
 [![StackBlitz](https://img.shields.io/badge/StackBlitz-23041B26?style=flat-square&logo=StackBlitz&logoColor=%23FFFFFF&labelColor=%23041B26&color=%23041B26)](https://stackblitz.com/github/stylescape/example-npm/tree/main?file=src%2Findex.html)
 
 </div>
-
 
 <p align="center">
     <img src="https://raw.githubusercontent.com/stylescape/brand/master/src/logo/logo-transparant.png" width="20%" height="20%" alt="Stylescape Logo">
