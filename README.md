@@ -14,13 +14,18 @@
 
 ---
 
-...
+Include [Stylescape](https://scape.style)'s source Sass and compiled JavaScript bundle via npm.
 
 ---
 
 ## Quickstart
 
-...
+```sh
+git clone https://github.com/stylescape/example-npm.git
+npm install
+npm start
+```
+
 
 ---
 
