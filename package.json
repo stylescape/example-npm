@@ -1,7 +1,7 @@
 {
-    "name": "sass-js",
+    "name": "stylescape_npm",
     "description": "Include Stylescape's source Sass and compiled JavaScript bundle via npm.",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "private": true,
     "repository": "https://github.com/stylescape/example-npm",
     "license": "MIT",
@@ -20,8 +20,7 @@
         "test": "npm-run-all css-lint css"
     },
     "dependencies": {
-        "@popperjs/core": "^2.11.8",
-        "bootstrap": "^5.3.3"
+        "stylescape": "^0.0.22"
     },
     "devDependencies": {
         "autoprefixer": "^10.4.19",
