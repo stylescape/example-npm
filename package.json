@@ -20,7 +20,7 @@
         "test": "npm-run-all css-lint css"
     },
     "dependencies": {
-        "stylescape": "^0.1.47"
+        "stylescape": "^0.1.51"
     },
     "devDependencies": {
         "autoprefixer": "^10.4.21",
@@ -28,9 +28,9 @@
         "npm-run-all": "^4.1.5",
         "postcss": "^8.5.6",
         "postcss-cli": "^11.0.1",
-        "sass": "^1.91.0",
+        "sass": "^1.92.1",
         "sirv-cli": "^3.0.1",
-        "stylelint": "^16.23.1",
+        "stylelint": "^16.24.0",
         "stylelint-config-twbs-bootstrap": "^15.1.0"
     }
 }
