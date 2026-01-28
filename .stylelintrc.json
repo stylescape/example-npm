@@ -1,14 +1,15 @@
 {
-    "extends": [
-    ],
-    "reportInvalidScopeDisables": true,
-    "reportNeedlessDisables": true,
-    "overrides": [
-        {
-        "files": "**/*.scss",
-        "rules": {
-            "scss/selector-no-union-class-name": true
-        }
-        }
-    ]
+    "extends": ["stylelint-config-standard-scss"],
+    "rules": {
+        "scss/at-rule-no-unknown": [
+            true,
+            {
+                "ignoreAtRules": ["use", "forward", "import", "mixin", "include", "function", "return", "if", "else", "each", "for", "while", "extend"]
+            }
+        ],
+        "selector-class-pattern": null,
+        "no-descending-specificity": null,
+        "property-no-vendor-prefix": null,
+        "value-no-vendor-prefix": null
+    }
 }

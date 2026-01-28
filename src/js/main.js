@@ -1,16 +1,9 @@
-// // Import the Stylescape bundle
-// //
-// // This includes Popper and all of Stylescape's JS plugins.
+// Import Stylescape JavaScript for auto-initialization
+import 'stylescape';
 
-// import "bootstrap/dist/js/bootstrap.bundle.min.js";
+// Stylescape auto-initializes components with data-ss attributes:
+// - data-ss="aside" for sidebars
+// - data-ss="accordion" for accordions
+// - data-ss="theme-toggle" for theme switching
 
-
-// //
-// // Place any custom JS here
-// //
-
-// // Create an example popover
-// document.querySelectorAll('[data-bs-toggle="popover"]')
-//     .forEach(popover => {
-//         new bootstrap.Popover(popover)
-//     })
+console.log('Stylescape initialized');

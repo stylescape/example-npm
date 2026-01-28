@@ -1,70 +1,186 @@
 <!doctype html>
-
-<html lang="en">
-
+<html lang="en" data-theme="light">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/main.css">
-        <title>Stylescape w/ Webpack</title>
+        <meta charset="UTF-8" />
+        <title>Stylescape - npm Example</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Stylescape example using npm and Sass compilation" />
+        <link rel="stylesheet" href="../css/main.css" />
     </head>
 
     <body>
-        <div class="">
-            <header class="">
-                <h1 class="">Stylescape</h1>
-                <a href="https://github.com/stylescape/example-npm/" target="_blank" rel="noopener">View on GitHub</a>
-            </header>
-
-            <h1>Build Stylescape with npm</h1>
-
-            <div class="">
-                <p class="">You've successfully loaded the Stylescape + npm example! It's loaded up with <a href="https://scape.style/">Stylescape</a> and uses Webpack to compile and bundle our Sass and JavaScript.</p>
-                <p>If this button appears blue and the link appears purple, you've done it!</p>
-            </div>
-
-            <button type="button" class="">Toggle offcanvas</button>
-            <a id="" class="" href="#" role="button" title="Custom popover">Example popover</a>
-
-            <div class="" tabindex="-1" id="" aria-labelledby="">
-                <div class="">
-                    <h5 class="" id="">Offcanvas</h5>
-                    <button type="button" class="" aria-label="Close"></button>
-                </div>
-                <div class="">
-                    <div>
-                        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+        <div class="frame_main">
+            <!-- TOP RIBBON -->
+            <div class="frame_main__area--top">
+                <header class="ribbon--top" role="navigation">
+                    <div class="ribbon__slot--horizontal_left">
+                        <h1 class="ribbon__title" role="heading" aria-level="1">
+                            <div class="ribbon__title__text">
+                                <a href="/">STYLESCAPE NPM</a>
+                            </div>
+                        </h1>
                     </div>
-                    <div class="">
-                        <button class="" type="button" id="">
-                        Dropdown button
+
+                    <div class="ribbon__slot--horizontal_center">
+                        <button
+                            aria-label="Toggle navigation"
+                            aria-expanded="false"
+                            type="button"
+                            class="menu_button ribbon__nav_button"
+                        >
+                            ☰
                         </button>
-                        <ul class="" aria-labelledby="">
-                        <li><a class="" href="#">Action</a></li>
-                        <li><a class="" href="#">Another action</a></li>
-                        <li><a class="" href="#">Something else here</a></li>
-                        </ul>
                     </div>
-                </div>
+
+                    <div class="ribbon__slot--horizontal_right">
+                        <menu class="ribbon__menu" role="menubar">
+                            <li class="ribbon__menu__item">
+                                <input type="checkbox" id="themeToggle" data-ss="theme-toggle" />
+                            </li>
+                        </menu>
+                    </div>
+                </header>
             </div>
 
-            <hr class="">
+            <!-- LEFT SIDEBAR -->
+            <div class="frame_main__area--middle_left">
+                <aside
+                    class="sidebar--left"
+                    id="sidebar_left"
+                    role="navigation"
+                    data-ss="aside"
+                    data-ss-aside-menu="sidebar_left_menu"
+                    data-ss-aside-switch="sidebar_left_switch"
+                >
+                    <nav class="ribbon--left ribbon--inverted" aria-label="Sidebar Left Navigation"></nav>
 
-            <h2>Graphic Languages</h2>
-            <p>Read more detailed information.</p>
-            <ul class="">
-                <li><a href="https://unit.gl/">unit.gl</a></li>
-                <li><a href="https://icon.gl/">icon.gl</a></li>
-                <li><a href="https://hue.gl/">hue.gl</a></li>
-                <li><a href="https://font.gl/">font.gl</a></li>
-                <li><a href="https://page.gl/">page.gl</a></li>
-                <li><a href="https://pack.gl/">pack.gl</a></li>
-                <li><a href="https://move.gl/">move.gl</a></li>
-            </ul>
+                    <nav id="sidebar_left_menu" class="sidebar__menu" aria-label="Sidebar Left Content Navigation">
+                        <section class="sidebar__content rail" role="region">
+                            <h2>Navigation</h2>
+                            <ul>
+                                <li><a href="#intro">Introduction</a></li>
+                                <li><a href="#setup">Setup</a></li>
+                                <li><a href="#components">Components</a></li>
+                            </ul>
+                        </section>
+                    </nav>
 
-            <hr class="">
+                    <div class="sidebar__control" role="group" aria-label="Sidebar Toggle">
+                        <button
+                            class="flipper--left"
+                            id="sidebar_left_switch"
+                            aria-pressed="false"
+                            aria-label="Toggle Left Sidebar"
+                        ></button>
+                    </div>
+                </aside>
+            </div>
 
-            <p class="">Created and open sourced by the Stylescape team. Licensed MIT.</p>
+            <!-- MAIN CONTENT -->
+            <div class="frame_main__area--middle_center">
+                <main class="main_content rail" role="main">
+                    <section id="intro">
+                        <h1>Stylescape via npm</h1>
+                        <p>
+                            This example demonstrates using Stylescape from npm with Sass compilation.
+                            Customize variables, import only what you need, and build optimized CSS.
+                        </p>
+
+                        <h4>📦 Installation</h4>
+                        <pre><code>npm install stylescape</code></pre>
+                    </section>
+
+                    <hr />
+
+                    <section id="setup">
+                        <h2>Setup</h2>
+
+                        <h3>1. Import Stylescape in your Sass</h3>
+                        <pre><code>// src/scss/main.scss
+@use "stylescape" as *;</code></pre>
+
+                        <h3>2. Customize Variables (Optional)</h3>
+                        <pre><code>// Override defaults before importing
+@use "stylescape" with (
+  $color-primary: #007bff,
+  $font-family-base: "Inter", sans-serif
+);</code></pre>
+
+                        <h3>3. Compile with Sass</h3>
+                        <pre><code>npm run build</code></pre>
+                    </section>
+
+                    <hr />
+
+                    <section id="components">
+                        <h2>Components</h2>
+
+                        <h3>Accordion</h3>
+                        <div data-ss="accordion">
+                            <details>
+                                <summary>Why use npm?</summary>
+                                <p>npm lets you customize Stylescape variables and import only the modules you need.</p>
+                            </details>
+                            <details>
+                                <summary>Can I use Sass?</summary>
+                                <p>Yes! Stylescape's source Sass files are included in the npm package.</p>
+                            </details>
+                            <details>
+                                <summary>How do I customize?</summary>
+                                <p>Override variables before importing Stylescape, or create your own components using the provided mixins.</p>
+                            </details>
+                        </div>
+
+                        <h3>Buttons</h3>
+                        <div class="button_group">
+                            <button class="button">Default Button</button>
+                            <button class="button button--primary">Primary Button</button>
+                        </div>
+                    </section>
+                </main>
+            </div>
+
+            <!-- RIGHT SIDEBAR -->
+            <div class="frame_main__area--middle_right rail">
+                <aside
+                    class="sidebar--right"
+                    id="sidebar_right"
+                    role="navigation"
+                    data-ss="aside"
+                    data-ss-aside-menu="sidebar_right_menu"
+                    data-ss-aside-switch="sidebar_right_switch"
+                >
+                    <nav id="sidebar_right_menu" class="sidebar__menu" aria-label="Sidebar Right Content Navigation">
+                        <section class="sidebar__content rail" role="region">
+                            <h2>Resources</h2>
+                            <ul>
+                                <li><a href="https://github.com/stylescape/stylescape">GitHub</a></li>
+                                <li><a href="https://www.scape.style/">Documentation</a></li>
+                                <li><a href="https://www.npmjs.com/package/stylescape">npm Package</a></li>
+                            </ul>
+                        </section>
+                    </nav>
+
+                    <div class="sidebar__control" role="group" aria-label="Sidebar Toggle">
+                        <button
+                            class="flipper--right"
+                            id="sidebar_right_switch"
+                            aria-pressed="false"
+                            aria-label="Toggle Right Sidebar"
+                        ></button>
+                    </div>
+                </aside>
+            </div>
+
+            <!-- BOTTOM -->
+            <div class="frame_main__area--bottom">
+                <footer class="ribbon--bottom">
+                    <p>Stylescape npm Example | <a href="https://github.com/stylescape/example-npm">View on GitHub</a></p>
+                </footer>
+            </div>
         </div>
+
+        <!-- Load Stylescape JS from node_modules -->
+        <script src="../node_modules/stylescape/js/stylescape.iife.js"></script>
     </body>
 </html>
