@@ -37,6 +37,6 @@
         "sass": "^1.97.3",
         "sirv-cli": "^3.0.1",
         "stylelint": "^16.26.1",
-        "stylelint-config-standard-scss": "^15.0.1"
+        "stylelint-config-standard-scss": "^17.0.0"
     }
 }
