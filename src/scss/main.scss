@@ -5,7 +5,7 @@
 //
 // Option 1: Import all of Stylescape
 //
-@use "stylescape";
+@use "stylescape/scss" as stylescape;
 
 //
 // Option 2: Import with custom configuration
